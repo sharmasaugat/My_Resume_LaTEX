@@ -1,0 +1,122 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[empty]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{latexsym}
+\usepackage{fontawesome}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Margin configuration
+\geometry{
+    top=0.4in,
+    bottom=0.4in,
+    left=0.6in,
+    right=0.6in
+}
+
+% Define custom colors
+\definecolor{namecolor}{RGB}{32, 42, 68}
+\definecolor{sectioncolor}{RGB}{32, 42, 68}
+\definecolor{linkcolor}{RGB}{51, 114, 255}
+\definecolor{datecolor}{RGB}{96, 96, 96}
+
+% Hyperref configuration
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    filecolor=linkcolor,
+    urlcolor=linkcolor,
+}
+
+% Configure section formatting
+\titleformat{\section}
+    {\Large\bfseries\color{sectioncolor}}
+    {}{0em}{}[\vspace{-0.8em}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{1.2ex plus .1ex}{0.8ex plus .1ex}
+
+% Bullet customization
+\setlist[itemize]{leftmargin=0.2in,label={\raisebox{0.4ex}{\tiny$\bullet$}},itemsep=0.1em,parsep=0em}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries\color{sectioncolor} SAUGAT SHARMA}
+
+    \vspace{0.2em}
+    {\Large\color{sectioncolor} Full Stack Software Engineer}
+
+    \vspace{0.2em}
+    {\color{linkcolor}
+        \href{mailto:ssaugat298@gmail.com}{\faEnvelope\ ssaugat298@gmail.com} 
+        · \href{tel:+19452091185}{\faPhone\ (945) 209-1185} 
+        · \href{https://saugatsharma.com}{\faGlobe\ saugatsharma.com} 
+        · \href{https://linkedin.com/in/saugat-sharma}{\faLinkedin\ linkedin.com/in/saugat-sharma}
+    }
+\end{center}
+
+\section{Professional Summary}
+Results-driven Full Stack Engineer with expertise in cloud ERP systems and enterprise applications. Demonstrated success in optimizing system performance, implementing cloud migrations, and developing robust purchasing modules. Skilled in both modern and legacy system integration with a focus on scalable architecture and efficient data processing.
+
+\section{Technical Expertise}
+\begin{itemize}
+    \item \textbf{Frontend Development:} Angular 10, TypeScript, React, HTML5/CSS3, ngrx/RxJS, Template-Driven \& Reactive Forms
+    \item \textbf{Backend \& APIs:} .NET Core, C\#, Java, Spring Boot, REST APIs, Microservices, Genero BDL
+    \item \textbf{Database \& Cloud:} SQL Server, Oracle, MongoDB, AWS Cloud Services, Docker Containers
+    \item \textbf{Development Tools:} Git, CI/CD Pipelines, Test-Driven Development, Agile Methodologies
+\end{itemize}
+
+\section{Professional Experience}
+\noindent\textbf{\large\color{sectioncolor} TYLER TECHNOLOGIES} \hfill{\color{datecolor} April 2023 - Present}\\
+\textit{Full Stack Software Engineer} \hfill \textit{Maine}
+
+\vspace{0.2em}
+\begin{itemize}
+    \item Spearheaded multi-tier cloud ERP purchasing application, integrating Angular frontend with TypeScript backend-for-frontend (BFF) and Genero 4GL backend, maintaining \textbf{100\% ticket resolution rate}.
+    \item Engineered high-performance .NET data processing layer, achieving \textbf{40\% improvement} in query response times.
+    \item Designed caching strategies and optimizations, reducing database load by \textbf{35\%}.
+    \item Implemented ngrx/RxJS state management, improving application reliability.
+    \item Maintained and enhanced two legacy applications:
+        \begin{itemize}
+            \item Full-stack Genero application with business logic and UI components.
+            \item Modern Angular/.NET Core application with Entity Framework and SQL Server.
+        \end{itemize}
+    \item Established automated testing framework, achieving \textbf{85\% code coverage}.
+\end{itemize}
+
+\vspace{0.4em}
+\noindent\textbf{\large\color{sectioncolor} AMERICAN BUREAU OF SHIPPING} \hfill{\color{datecolor} May 2022 - April 2023}\\
+\textit{Full Stack Software Engineer} \hfill \textit{Texas}
+
+\vspace{0.2em}
+\begin{itemize}
+    \item Reviewed business requirements and functional designs to ensure robust applications.
+    \item Analyzed requirements and scenarios, driving suitable solutions in an agile environment.
+    \item Rewrote legacy systems into microservices-based Spring Boot applications, reducing complexity and deployment time.
+    \item Created pages from mockups using Angular 4, jQuery, CSS3, and HTML5.
+    \item Developed RESTful APIs with JAX-RS for GET, POST, PUT, and DELETE operations.
+    \item Authored PL/SQL procedures for database interactions and stored procedure execution.
+\end{itemize}
+
+\section{Education \& Certifications}
+\begin{multicols}{2}
+    \begin{itemize}
+        \item \textbf{B.S. Computer Science} \\ New Mexico Institute of Mining and Technology \\ (2022)
+    \end{itemize}
+    \columnbreak
+    \begin{itemize}
+        \item \textbf{AWS Cloud Practitioner} (2023)
+        \item \textbf{AWS Technical Accreditation} (2023)
+    \end{itemize}
+\end{multicols}
+
+\end{document}
